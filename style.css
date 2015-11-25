@@ -1,106 +1,187 @@
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
-html,
 body {
-  height: 100%;
-  background-color: #00ACC1;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    background-color: #fff;
+    margin: 0;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.center-page-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-.center-page {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
+.menu {
+    z-index: 100;
     position: fixed;
     top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .center-page {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+    left: 0;
+    right: 0;
+    height: 0px;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
+.dark {
+    background-color: #fff;
+    height: 70px;
 }
+
+
+
+/* MEDIA BUTTONS AND SUCH */
+
+.media-icons {
+    position: relative;
+    display: inline-block;
+    float: right;
+    right: 25px;
+    top: 20px;
+}
+
+.media-icons a {
+    text-decoration: none;
+}
+
+.media-icons a + a {
+    margin-left: 15px;
+}
+
+#github-icon,
+#linkedin-icon {
+    fill: rgba(255, 255, 255, .6);
+
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+#github-icon:hover,
+#linkedin-icon:hover {
+    fill: #fff;
+}
+
+.dark #github-icon,
+.dark #linkedin-icon {
+    fill: rgba(0, 0, 0, .6);
+}
+
+.dark #github-icon:hover,
+.dark #linkedin-icon:hover {
+    fill: #000;
+}
+
+/* END MEDIA BUTTONS */
+
+.nav {
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  top: 11px;
+  left: 5px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.dark .nav ul li a {
+    color: rgba(0, 0, 0, .6);;
+}
+
+.nav ul li a {
+  color: rgba(255, 255, 255, .6);
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+.dark .nav ul li a:hover {
+  color: #000;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+}
+
+.nav ul li a:hover:before {
+  width: 100%;
+}
+
+.dark .nav ul li a:before {
+  background: rgba(0, 0, 0, .6);
+
+}
+
+.nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: rgba(255, 255, 255, .6);
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+.dark ul li.active a {
+  color: rgba(0, 0, 0, .6);
+}
+.nav ul li.active a {
+  color: rgba(255, 255, 255, .6);
+}
+.nav ul li.active a:before {
+  width: 100%;
+}
+
+
+
+.main-page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.bg-img {
+    background-image: url(https://images.unsplash.com/photo-1433840496881-cbd845929862?dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1550);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -o-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+}
+

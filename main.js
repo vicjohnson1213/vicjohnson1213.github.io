@@ -13,11 +13,15 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= ($('#about-me-page').offset().top - 90)) {
-            $('.menu').addClass('dark');
+        if (scroll >= ($('#about-me-page').offset().top - 70)) {
+            $('.nav-menu').addClass('dark');
+            $('.media-icons').addClass('dark');
+            $('.navbar-bg').addClass('dark');
             $('.arrow-container').addClass('hidden');
         } else {
-            $('.menu').removeClass('dark');
+            $('.nav-menu').removeClass('dark');
+            $('.media-icons').removeClass('dark');
+            $('.navbar-bg').removeClass('dark');
             $('.arrow-container').removeClass('hidden');
         }
     })

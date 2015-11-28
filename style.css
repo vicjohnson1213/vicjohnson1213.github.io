@@ -2,14 +2,69 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, .7);
   background-color: #fff;
   margin: 0;
   height: 100%;
 }
 
+
+
+
+/* BEGIN GENERAL LINKS */
 a {
   text-decoration: none;
+  color: rgba(255, 255, 255, .7);
+
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+a svg {
+  fill: rgba(255, 255, 255, .7);
+
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+a svg:hover {
+  fill: rgba(255, 255, 255, 1);
+}
+/* END GENERAL LINKS */
+
+/* BEGIN DARK LINKS */
+.dark a {
+  color: rgba(0, 0, 0, .5);
+}
+
+.dark a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.dark a svg {
+  fill: rgba(0, 0, 0, .5);
+}
+
+.dark a svg:hover {
+  fill: rgba(0, 0, 0, 1);
+}
+/* END DARK LINKS */
+
+
+
+
 
 .bg-img {
   background-image: url(https://images.unsplash.com/photo-1433840496881-cbd845929862?dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1550);
@@ -40,26 +95,6 @@ a {
   padding: 10px 10px;
 }
 
-.navbar-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  background-color: transparent;
-
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -ms-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-}
-
-.navbar-bg.dark {
-  height: 70px;
-  background-color: #fff;
-}
-
 .nav-menu,
 .media-icons {
   display: inline;
@@ -85,7 +120,6 @@ a {
 .nav-menu ul li a {
   text-decoration: none;
   font-family: 'Montserrat', helvetica, sans-serif;
-  color: rgba(255, 255, 255, .6);
   font-size: 18px;
   text-transform: uppercase;
   padding: 10px 15px;
@@ -101,11 +135,11 @@ a {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: -12px;
   height: 2px;
-  width: 0%;
-  background-color: rgba(255, 255, 255, .6);
+  width: 0;
+  background-color: rgba(255, 255, 255, .7);
 
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
@@ -118,50 +152,17 @@ a {
   background-color: rgba(0, 0, 0, .5);
 }
 
-.nav-menu ul li a:hover:before {
+.nav-menu ul li a:hover:before,
+.nav-menu ul li a.active:before {
   width: 100%;
+  left: 0;
 }
-
-.nav-menu ul li a:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-.nav-menu.dark ul li a {
-  color: rgba(0, 0, 0, .5);
-}
-
-.nav-menu.dark ul li a:hover {
-  color: rgba(0, 0, 0, .9);
-}
-
 
 
 
 .media-icons {
   top: 21px;
   right: 25px;
-}
-
-.media-icons svg {
-  fill: rgba(255, 255, 255, .6);
-
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -ms-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
-}
-
-.media-icons svg:hover {
-  fill: rgba(255, 255, 255, 1);
-}
-
-.media-icons.dark svg {
-  fill: rgba(0, 0, 0, .5);
-}
-
-.media-icons.dark svg:hover {
-  fill: rgba(0, 0, 0, .9);
 }
 
 .media-icons a + a {
@@ -177,7 +178,7 @@ a {
 }
 
 #down-arrow {
-    stroke: rgba(255, 255, 255, .6);
+    stroke: rgba(255, 255, 255, .7);
     stroke-width: 2px;
 
     -webkit-transition: all .25s;
@@ -193,7 +194,7 @@ a {
 
 h1.header {
     font-family: 'Montserrat', Helvetica, sans-serif;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .7);
     letter-spacing: .05em;
     text-transform: uppercase;
     font-size: 45px;
@@ -202,7 +203,7 @@ h1.header {
 
 p.lead {
     font-family: 'Open Sans', sans-serif;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .7);
     font-size: 20px;
     margin: 15px 0;
 }
@@ -235,9 +236,73 @@ p.lead {
 }
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.hidden {
-  visibility: hidden;
+.page-container {
+  padding: 100px 90px;
+}
+
+.project + .project {
+  margin-top: 50px;
+}
+
+.project-icon,
+.project-description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-icon {
+  margin-right: 30px;
+  text-align: right;
+  width: 20%;
+}
+
+.project-icon svg {
+  height: 75px;
+}
+
+.project-description {
+  width: 65%;
+}
+
+.project-description h3,
+.project-description p {
+  margin: 0;
+}
+
+.project-description h3 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.project-description p {
+  font-size: 16px;
+}
+
+.project-description p a {
+  text-decoration: underline;
+}
+
+#about-me-page {
+  background:
+  linear-gradient(135deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px),
+  linear-gradient(225deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px)0 64px;
+  background-color:#fff;
+  background-size: 64px 128px;
+}
+
+#portfolio-page {
+  background:
+  radial-gradient(#002729 15%, transparent 16%) 0 0,
+  radial-gradient(#002729 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px,
+  radial-gradient(circle, transparent, rgba(0, 0, 0, .3));
+  background-color:#004042;
+  background-size:16px 16px, 16px 16px, 16px 16px, 16px 16px, cover;
 }

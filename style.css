@@ -1,15 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   color: rgba(255, 255, 255, .7);
   background-color: #fff;
   margin: 0;
   height: 100%;
 }
 
-
+p + p {
+  margin-top: 50px;
+}
 
 
 /* BEGIN GENERAL LINKS */
@@ -43,6 +46,8 @@ a svg:hover {
   fill: rgba(255, 255, 255, 1);
 }
 /* END GENERAL LINKS */
+
+
 
 /* BEGIN DARK LINKS */
 .dark a {
@@ -201,11 +206,29 @@ h1.header {
     margin: 15px 0;
 }
 
+h1.header.dark {
+  color: rgba(0, 0, 0, .5);
+}
+
+.page-container h1.header {
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 65px;
+}
+
 p.lead {
     font-family: 'Open Sans', sans-serif;
     color: rgba(255, 255, 255, .7);
-    font-size: 20px;
-    margin: 15px 0;
+    font-size: 22px;
+}
+
+p.bold {
+  font-weight: 400;
+}
+
+p.lead.dark {
+  color: rgba(0, 0, 0, .5);
 }
 
 .center-container {
@@ -240,7 +263,8 @@ p.lead {
 }
 
 .page-container {
-  padding: 100px 90px;
+  padding: 10px 200px;
+  padding-bottom: 50px;
 }
 
 .project + .project {
@@ -305,4 +329,68 @@ p.lead {
   radial-gradient(circle, transparent, rgba(0, 0, 0, .3));
   background-color:#004042;
   background-size:16px 16px, 16px 16px, 16px 16px, 16px 16px, cover;
+}
+
+.skills-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.skill + .skill {
+  margin-left: 70px;
+}
+
+.skill {
+  fill: transparent;
+  stroke: rgba(21, 78, 21, .8);
+  stroke-width: 50px;
+  height: 200px;
+  stroke-dasharray: 0 1005;
+
+
+  -webkit-transition: stroke-dasharray 1s ease-in-out;
+  -moz-transition: stroke-dasharray 1s ease-in-out;
+  -ms-transition: stroke-dasharray 1s ease-in-out;
+  -o-transition: stroke-dasharray 1s ease-in-out;
+  transition: stroke-dasharray 1s ease-in-out;
+}
+
+.skill .bg {
+  stroke-dasharray: 1005 1005;
+  stroke: rgba(21, 78, 21, .2);
+}
+
+.skill text {
+  text-anchor: middle;
+  font-size: 35px;
+  stroke-width: 2px;
+  stroke: rgba(0, 0, 0, .5);
+}
+
+.show .skills-row #skill-js {
+  stroke-dasharray: 950 55;
+}
+
+.show .skills-row #skill-git {
+  stroke-dasharray: 910 95;
+}
+
+.show .skills-row #skill-unix {
+ stroke-dasharray: 930 75;
+}
+
+.show .skills-row #skill-node {
+  stroke-dasharray: 870 135;
+}
+
+.show .skills-row #skill-c-sharp {
+  stroke-dasharray: 800 205;
+}
+
+.show .skills-row #skill-c {
+  stroke-dasharray: 750 255;
+}
+
+.show .skills-row #skill-sql {
+  stroke-dasharray: 650 355;
 }

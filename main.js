@@ -12,6 +12,7 @@ $(function() {
 
     updateScroll();
     $(window).scroll(updateScroll);
+    $(window).resize(updateScroll)
 });
 
 function updateScroll() {
@@ -47,5 +48,12 @@ function updateScroll() {
         $('#home-btn').removeClass('active');
         $('#about-me-btn').removeClass('active');
         $('#portfolio-btn').addClass('active');
+    }
+
+    if ((scroll + $(window).height() > $('.skills-container').offset().top) &&
+        (scroll < ($('.skills-container').offset().top + $('.skills-container').height()))) {
+        $('.skills-container').addClass('show');
+    } else {
+        $('.skills-container').removeClass('show');
     }
 }

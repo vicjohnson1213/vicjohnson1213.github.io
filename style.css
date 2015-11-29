@@ -348,11 +348,11 @@ p.lead.dark {
   stroke-dasharray: 0 1005;
 
 
-  -webkit-transition: stroke-dasharray 1s ease-in-out;
-  -moz-transition: stroke-dasharray 1s ease-in-out;
-  -ms-transition: stroke-dasharray 1s ease-in-out;
-  -o-transition: stroke-dasharray 1s ease-in-out;
-  transition: stroke-dasharray 1s ease-in-out;
+  -webkit-transition: stroke-dasharray 1.5s ease-in-out;
+  -moz-transition: stroke-dasharray 1.5s ease-in-out;
+  -ms-transition: stroke-dasharray 1.5s ease-in-out;
+  -o-transition: stroke-dasharray 1.5s ease-in-out;
+  transition: stroke-dasharray 1.5s ease-in-out;
 }
 
 .skill .bg {

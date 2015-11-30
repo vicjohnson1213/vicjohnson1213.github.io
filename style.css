@@ -8,6 +8,12 @@ body {
   background-color: #fff;
   margin: 0;
   height: 100%;
+  z-index: -100;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, .2);
+  width: 80%
 }
 
 p + p {
@@ -50,38 +56,66 @@ a svg:hover {
 
 
 /* BEGIN DARK LINKS */
-.dark a {
+.dark a,
+a.dark {
   color: rgba(0, 0, 0, .5);
 }
 
-.dark a:hover {
+.dark a:hover,
+a.dark:hover {
   color: rgba(0, 0, 0, 1);
 }
 
-.dark a svg {
+.dark a svg,
+a.dark svg {
   fill: rgba(0, 0, 0, .5);
 }
 
-.dark a svg:hover {
+.dark a svg:hover,
+a.dark svg:hover {
   fill: rgba(0, 0, 0, 1);
 }
 /* END DARK LINKS */
 
 
+/* BEGIN GENERAL ELEMENTS */
+.dark h1, h1.dark,
+.dark h2, h2.dark,
+.dark h3, h3.dark,
+.dark h4, h4.dark,
+.dark h5, h5.dark {
+  color: rgba(0, 0, 0, .5);
+}
 
+p.lead {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, .7);
+    font-size: 22px;
+}
 
+p.bold {
+  font-weight: 400;
+}
+
+.dark p,
+p.dark {
+  color: rgba(0, 0, 0, .5);
+}
+/* END GENERAL ELEMENTS */
 
 .bg-img {
-  background-image: url(https://images.unsplash.com/photo-1433840496881-cbd845929862?dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1550);
-  background-repeat: no-repeat;
-  background-size: cover;
-
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   z-index: -100;
+}
+
+#home-page .bg-img {
+  background-image: url(https://images.unsplash.com/photo-1433840496881-cbd845929862?dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1550);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   filter: brightness(0.5);
   -webkit-filter: brightness(0.5);
@@ -100,10 +134,20 @@ a svg:hover {
   padding: 10px 10px;
 }
 
+.nav-bg {
+  height: 70px;
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  overflow: hidden;
+}
+
 .nav-menu,
 .media-icons {
   display: inline;
   position: fixed;
+  z-index: 100;
 }
 
 .nav-menu {
@@ -114,7 +158,7 @@ a svg:hover {
 .nav-menu ul {
   display: inline;
   list-style: none;
-  padding: 0;
+  padding: 15px;
 }
 
 .nav-menu ul li {
@@ -167,7 +211,7 @@ a svg:hover {
 
 .media-icons {
   top: 21px;
-  right: 25px;
+  right: 35px;
 }
 
 .media-icons a + a {
@@ -217,20 +261,6 @@ h1.header.dark {
   margin-top: 65px;
 }
 
-p.lead {
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(255, 255, 255, .7);
-    font-size: 22px;
-}
-
-p.bold {
-  font-weight: 400;
-}
-
-p.lead.dark {
-  color: rgba(0, 0, 0, .5);
-}
-
 .center-container {
     position: absolute;
     top: 0px;
@@ -259,57 +289,14 @@ p.lead.dark {
 }
 
 .page {
+  position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .page-container {
-  padding: 10px 200px;
+  padding: 10px 0;
   padding-bottom: 50px;
-}
-
-.project + .project {
-  margin-top: 50px;
-}
-
-.project-icon,
-.project-description {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.project-icon {
-  margin-right: 30px;
-  text-align: right;
-  width: 20%;
-}
-
-.project-icon svg {
-  height: 75px;
-}
-
-.project-description {
-  width: 65%;
-}
-
-.project-description h3,
-.project-description p {
-  margin: 0;
-}
-
-.project-description h3 {
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 5px;
-}
-
-.project-description p {
-  font-size: 16px;
-}
-
-.project-description p a {
-  text-decoration: underline;
 }
 
 #about-me-page {
@@ -320,15 +307,9 @@ p.lead.dark {
   background-size: 64px 128px;
 }
 
-#portfolio-page {
-  background:
-  radial-gradient(#002729 15%, transparent 16%) 0 0,
-  radial-gradient(#002729 15%, transparent 16%) 8px 8px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px,
-  radial-gradient(circle, transparent, rgba(0, 0, 0, .3));
-  background-color:#004042;
-  background-size:16px 16px, 16px 16px, 16px 16px, 16px 16px, cover;
+#about-me-page p {
+  padding: 0 15vw;
+  text-align: justify;
 }
 
 .skills-container {
@@ -342,7 +323,8 @@ p.lead.dark {
 
 .skill {
   fill: transparent;
-  stroke: rgba(21, 78, 21, .8);
+  stroke: rgba(77, 106, 121, .8);
+  /*stroke: rgba(224, 50, 1, .8);*/
   stroke-width: 50px;
   height: 200px;
   stroke-dasharray: 0 1005;
@@ -357,7 +339,8 @@ p.lead.dark {
 
 .skill .bg {
   stroke-dasharray: 1005 1005;
-  stroke: rgba(21, 78, 21, .2);
+  /*stroke: rgba(224, 50, 1, .2);*/
+  stroke: rgba(77, 106, 121, .2);
 }
 
 .skill text {
@@ -387,10 +370,42 @@ p.lead.dark {
   stroke-dasharray: 800 205;
 }
 
-.show .skills-row #skill-c {
-  stroke-dasharray: 750 255;
+
+#portfolio-page .bg-img {
+  background-image: url(https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1375);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+
+  filter: brightness(0.4) blur(5px);
+  -webkit-filter: brightness(0.4) blur(5px);
+  -moz-filter: brightness(0.4) blur(5px);
+  -o-filter: brightness(0.4) blur(5px);
+  -ms-filter: brightness(0.4) blur(5px);
 }
 
-.show .skills-row #skill-sql {
-  stroke-dasharray: 650 355;
+.project-container {
+  padding-top: 70px;
+  position: relative;
+  z-index: 100;
 }
+
+.project {
+  padding: 20px 15vw;
+}
+.project p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.project h2 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+

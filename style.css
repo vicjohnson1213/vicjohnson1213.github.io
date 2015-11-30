@@ -113,7 +113,7 @@ p.dark {
 }
 
 #home-page .bg-img {
-  background-image: url(https://images.unsplash.com/photo-1433840496881-cbd845929862?dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1550);
+  background-image: url(images/protractor-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -124,7 +124,7 @@ p.dark {
   -ms-filter: brightness(0.5);
 }
 
-.navbar {
+/*.navbar {
   background-color: #aaa;
   position: fixed;
   top: 0px;
@@ -141,7 +141,7 @@ p.dark {
   left: -20px;
   right: -20px;
   overflow: hidden;
-}
+}*/
 
 .nav-menu,
 .media-icons {
@@ -372,7 +372,7 @@ h1.header.dark {
 
 
 #portfolio-page .bg-img {
-  background-image: url(https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&dpr=2&fit=crop&fm=jpg&h=1025&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1375);
+  background-image: url(images/notebook-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 

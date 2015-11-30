@@ -18,14 +18,14 @@ $(function() {
 function updateScroll() {
     var scroll = $(window).scrollTop();
 
-    if (scroll < ($('#about-me-page').offset().top - 40)) {
+    if ((scroll < ($('#about-me-page').offset().top - 40))) {
         // home page
         setLight();
 
         $('#home-btn').addClass('active');
         $('#about-me-btn').removeClass('active');
         $('#portfolio-btn').removeClass('active');
-    } else if (scroll < ($('#portfolio-page').offset().top - 40)) {
+    } else if ((scroll < ($('#portfolio-page').offset().top - 40))) {
         // about me page
         setDark();
 
@@ -39,14 +39,7 @@ function updateScroll() {
         $('#home-btn').removeClass('active');
         $('#about-me-btn').removeClass('active');
         $('#portfolio-btn').addClass('active');
-    }
-
-    if ((scroll + $(window).height() > $('.skills-container').offset().top) &&
-        (scroll < ($('.skills-container').offset().top + $('.skills-container').height()))) {
-        $('.skills-container').addClass('show');
-    } else {
-        $('.skills-container').removeClass('show');
-    }
+    }    
 }
 
 function setLight() {

@@ -239,9 +239,7 @@ h1.header.dark {
   color: rgba(0, 0, 0, .5);
 }
 
-.front-page {
-  width: 60%;
-}
+
 
 .page-container h1.header {
   text-align: center;
@@ -261,6 +259,10 @@ h1.header.dark {
 .center-inside {
   text-align: center;
   width: 100%
+}
+
+.front-page {
+  width: 60%;
 }
 
 .page {
@@ -293,7 +295,7 @@ h1.header.dark {
 }
 
 .skill + .skill {
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .skill {
@@ -325,23 +327,29 @@ h1.header.dark {
   stroke: rgba(0, 0, 0, .5);
 }
 
-.show .skills-row #skill-js {
+.skill circle {
+  cx: 200;
+  cy: 200;
+  r: 160;
+}
+
+.skills-row #skill-js {
   stroke-dasharray: 950 55;
 }
 
-.show .skills-row #skill-git {
+.skills-row #skill-git {
   stroke-dasharray: 910 95;
 }
 
-.show .skills-row #skill-unix {
+.skills-row #skill-unix {
  stroke-dasharray: 930 75;
 }
 
-.show .skills-row #skill-node {
+.skills-row #skill-node {
   stroke-dasharray: 870 135;
 }
 
-.show .skills-row #skill-c-sharp {
+.skills-row #skill-c-sharp {
   stroke-dasharray: 800 205;
 }
 

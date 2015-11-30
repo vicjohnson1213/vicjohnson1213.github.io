@@ -112,6 +112,10 @@ p.dark {
   z-index: -100;
 }
 
+#home-page {
+  height: 100vh;
+}
+
 #home-page .bg-img {
   background-image: url(images/protractor-min.jpeg);
   background-repeat: no-repeat;
@@ -123,25 +127,6 @@ p.dark {
   -o-filter: brightness(0.5);
   -ms-filter: brightness(0.5);
 }
-
-/*.navbar {
-  background-color: #aaa;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  overflow: hidden;
-  padding: 10px 10px;
-}
-
-.nav-bg {
-  height: 70px;
-  position: fixed;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  overflow: hidden;
-}*/
 
 .nav-menu,
 .media-icons {
@@ -254,6 +239,10 @@ h1.header.dark {
   color: rgba(0, 0, 0, .5);
 }
 
+.front-page {
+  width: 60%;
+}
+
 .page-container h1.header {
   text-align: center;
   font-size: 35px;
@@ -262,30 +251,16 @@ h1.header.dark {
 }
 
 .center-container {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
-}
-
-.center-outside {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center-inside {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    overflow: auto;
-    text-align: center;
+  text-align: center;
+  width: 100%
 }
 
 .page {
@@ -391,6 +366,7 @@ h1.header.dark {
 
 .project-container {
   padding-top: 70px;
+  padding-bottom: 70px;
   position: relative;
   z-index: 100;
 }
@@ -409,3 +385,31 @@ h1.header.dark {
   margin: 0;
 }
 
+.footer {
+  height: 150px;
+  background-color:#f9f9f9;
+
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+  0px 36px, 4px 2px, 29px 6px, 33px 30px;
+  background-image: 
+  linear-gradient(335deg, #fff 23px, transparent 23px),
+  linear-gradient(155deg, #fff 23px, transparent 23px),
+  linear-gradient(335deg, #fff 23px, transparent 23px),
+  linear-gradient(155deg, #fff 23px, transparent 23px),
+
+  linear-gradient(335deg, #fff 10px, transparent 10px),
+  linear-gradient(155deg, #fff 10px, transparent 10px),
+  linear-gradient(335deg, #fff 10px, transparent 10px),
+  linear-gradient(155deg, #fff 10px, transparent 10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0 15vw;
+  text-align: right;
+}

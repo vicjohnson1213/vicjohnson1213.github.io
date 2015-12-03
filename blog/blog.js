@@ -1,0 +1,4 @@
+hljs.initHighlightingOnLoad();
+
+$(function() {
+});

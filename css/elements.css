@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .7);
+  background-color: #fff;
+  margin: 0;
+  height: 100%;
+  z-index: -100;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, .2);
+  width: 80%
+}
+
+p + p {
+  margin-top: 50px;
+}
+
+
+/* BEGIN GENERAL LINKS */
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .7);
+
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+a svg {
+  fill: rgba(255, 255, 255, .7);
+
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+a svg:hover {
+  fill: rgba(255, 255, 255, 1);
+}
+/* END GENERAL LINKS */
+
+
+
+/* BEGIN DARK LINKS */
+.dark a,
+a.dark {
+  color: rgba(0, 0, 0, .5);
+}
+
+.dark a:hover,
+a.dark:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.dark a svg,
+a.dark svg {
+  fill: rgba(0, 0, 0, .5);
+}
+
+.dark a svg:hover,
+a.dark svg:hover {
+  fill: rgba(0, 0, 0, 1);
+}
+/* END DARK LINKS */
+
+
+/* BEGIN GENERAL ELEMENTS */
+.dark h1, h1.dark,
+.dark h2, h2.dark,
+.dark h3, h3.dark,
+.dark h4, h4.dark,
+.dark h5, h5.dark {
+  color: rgba(0, 0, 0, .5);
+}
+
+p.lead {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, .7);
+    font-size: 22px;
+}
+
+p.bold {
+  font-weight: 400;
+}
+
+.dark p,
+p.dark {
+  color: rgba(0, 0, 0, .5);
+}
+/* END GENERAL ELEMENTS */
+
+.bg-img {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -100;
+}
+
+#home-page {
+  height: 100vh;
+}
+
+#home-page .bg-img {
+  background-image: url(../images/protractor-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+  -o-filter: brightness(0.5);
+  -ms-filter: brightness(0.5);
+}
+
+.nav-menu,
+.media-icons {
+  display: inline;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav-menu {
+  top: 25px;
+  left: 10px;
+}
+
+.nav-menu ul {
+  display: inline;
+  list-style: none;
+  padding: 15px;
+}
+
+.nav-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.nav-menu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  height: 2px;
+  width: 0;
+  background-color: rgba(255, 255, 255, .7);
+
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.nav-menu.dark ul li a:before,
+.dark .nav-menu ul li a:before {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.nav-menu ul li a:hover:before,
+.nav-menu ul li a.active:before {
+  width: 100%;
+  left: 0;
+}
+
+
+.media-icons {
+  top: 21px;
+  right: 35px;
+}
+
+.media-icons a + a {
+  margin-left: 15px;
+}
+
+.center-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-inside {
+  text-align: center;
+  width: 100%
+}

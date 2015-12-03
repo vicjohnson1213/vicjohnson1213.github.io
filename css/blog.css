@@ -1,0 +1,42 @@
+body {
+    background:
+    linear-gradient(135deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px),
+    linear-gradient(225deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px)0 64px;
+    background-color:#fff;
+    background-size: 64px 128px;
+}
+
+p + p {
+    margin-top: 30px;
+}
+
+.posts {
+    width: 50vw;
+    margin: 90px auto;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 40px;
+    border: 1px solid #ccc;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post p {
+    text-indent: 2em;
+    font-size: 1.3em;
+}
+
+.post pre {
+    color: black;
+    margin: 0 5vw;
+    background-color: #f5f2f0;
+    padding: 1.5em;
+    font-size: 1.1em;
+}
+
+.hljs {
+    background: none;
+    padding: 0;
+}

@@ -11,21 +11,27 @@ p + p {
 }
 
 .posts {
-    width: 50vw;
-    margin: 90px auto;
-    background-color: #fff;
+    width: 55vw;
+    margin: 90px auto 0px auto;
     overflow: hidden;
     padding: 0 40px;
-    border: 1px solid #ccc;
 }
 
 .post {
     margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px 4vw;
+}
+
+.post + .post {
+    margin-top: 60px;
 }
 
 .post p {
     text-indent: 2em;
     font-size: 1.3em;
+    text-align: justify;
 }
 
 .post pre {
@@ -39,4 +45,9 @@ p + p {
 .hljs {
     background: none;
     padding: 0;
+}
+
+.footer {
+    background-color: none;
+    background: none;
 }

@@ -129,11 +129,11 @@ h1.header.dark {
  stroke-dasharray: 930 75;
 }
 
-.skills-row #skill-node {
+.skills-row #skill-python {
   stroke-dasharray: 870 135;
 }
 
-.skills-row #skill-c-sharp {
+.skills-row #skill-node {
   stroke-dasharray: 800 205;
 }
 

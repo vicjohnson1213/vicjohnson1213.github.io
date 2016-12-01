@@ -1,24 +1,97 @@
-.arrow-container {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    text-align: center;
-    z-index: 1;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .7);
+
+  height: 100vh;
 }
 
-#down-arrow {
-    stroke: rgba(255, 255, 255, .7);
-    stroke-width: 2px;
+#background-image {
+  background-image: url(../images/protractor-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+  -moz-filter: brightness(0.4);
+  -o-filter: brightness(0.4);
+  -ms-filter: brightness(0.4);
+
+  z-index: -1;
 }
 
-#down-arrow:hover {
-    stroke: rgba(255, 255, 255, 1);
+.navbar-default {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  margin-top: 8px;
+}
+
+.navbar-default .navbar-nav>li>a>svg {
+  fill: rgba(255, 255, 255, .7);
+}
+
+.navbar-default .navbar-nav>li>a:hover>svg {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgba(255, 255, 255, .7);
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.center-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-inside {
+  text-align: center;
+  width: 60%;
 }
 
 h1.header {
@@ -30,149 +103,7 @@ h1.header {
     margin: 15px 0;
 }
 
-h1.header.dark {
-  color: rgba(0, 0, 0, .5);
-}
-
-
-
-.page-container h1.header {
-  text-align: center;
-  font-size: 35px;
-  margin: 0;
-  margin-top: 65px;
-}
-
-
-
-.front-page {
-  width: 60%;
-}
-
-.page {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.page-container {
-  padding: 10px 0;
-  padding-bottom: 50px;
-}
-
-#about-me-page {
-  background:
-  linear-gradient(135deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px),
-  linear-gradient(225deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px)0 64px;
-  background-color:#fff;
-  background-size: 64px 128px;
-}
-
-#about-me-page p {
-  padding: 0 15vw;
-  text-align: justify;
-}
-
-.skills-container {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.skill + .skill {
-  margin-left: 50px;
-}
-
-.skill {
-  fill: transparent;
-  stroke: rgba(77, 106, 121, .8);
-  /*stroke: rgba(224, 50, 1, .8);*/
-  stroke-width: 50px;
-  height: 200px;
-  stroke-dasharray: 0 1005;
-
-
-  -webkit-transition: stroke-dasharray 1.5s ease-in-out;
-  -moz-transition: stroke-dasharray 1.5s ease-in-out;
-  -ms-transition: stroke-dasharray 1.5s ease-in-out;
-  -o-transition: stroke-dasharray 1.5s ease-in-out;
-  transition: stroke-dasharray 1.5s ease-in-out;
-}
-
-.skill .bg {
-  stroke-dasharray: 1005 1005;
-  /*stroke: rgba(224, 50, 1, .2);*/
-  stroke: rgba(77, 106, 121, .2);
-}
-
-.skill text {
-  text-anchor: middle;
-  font-size: 35px;
-  stroke-width: 2px;
-  stroke: rgba(0, 0, 0, .5);
-}
-
-.skill circle {
-  cx: 200;
-  cy: 200;
-  r: 160;
-}
-
-.skills-row #skill-js {
-  stroke-dasharray: 950 55;
-}
-
-.skills-row #skill-git {
-  stroke-dasharray: 910 95;
-}
-
-.skills-row #skill-unix {
- stroke-dasharray: 930 75;
-}
-
-.skills-row #skill-python {
-  stroke-dasharray: 870 135;
-}
-
-.skills-row #skill-node {
-  stroke-dasharray: 800 205;
-}
-
-
-#portfolio-page .bg-img {
-  background-image: url(../images/notebook-min.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: absolute;
-  left: -20px;
-  right: -20px;
-  top: -20px;
-  bottom: -20px;
-
-  filter: brightness(0.4) blur(5px);
-  -webkit-filter: brightness(0.4) blur(5px);
-  -moz-filter: brightness(0.4) blur(5px);
-  -o-filter: brightness(0.4) blur(5px);
-  -ms-filter: brightness(0.4) blur(5px);
-}
-
-.project-container {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  position: relative;
-  z-index: 100;
-}
-
-.project {
-  padding: 20px 15vw;
-}
-.project p {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.project h2 {
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  text-transform: uppercase;
-  margin: 0;
+p.header-body {
+    color: rgba(255, 255, 255, .7);
+    font-size: 22px;
 }

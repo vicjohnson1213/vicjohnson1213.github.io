@@ -1,14 +1,14 @@
 .arrow-container {
     position: absolute;
     width: 100%;
-    bottom: 20px;
+    bottom: 20pt;
     text-align: center;
     z-index: 1;
 }
 
 #down-arrow {
     stroke: rgba(255, 255, 255, .7);
-    stroke-width: 2px;
+    stroke-width: 2pt;
 
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
@@ -26,8 +26,8 @@ h1.header {
     color: rgba(255, 255, 255, .7);
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-size: 45px;
-    margin: 15px 0;
+    font-size: 45pt;
+    margin: 15pt 0;
 }
 
 h1.header.dark {
@@ -38,9 +38,9 @@ h1.header.dark {
 
 .page-container h1.header {
   text-align: center;
-  font-size: 35px;
+  font-size: 35pt;
   margin: 0;
-  margin-top: 65px;
+  margin-top: 65pt;
 }
 
 
@@ -56,16 +56,16 @@ h1.header.dark {
 }
 
 .page-container {
-  padding: 10px 0;
-  padding-bottom: 50px;
+  padding: 10pt 0;
+  padding-bottom: 50pt;
 }
 
 #about-me-page {
   background:
-  linear-gradient(135deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px),
-  linear-gradient(225deg, #fff 22px, #f3f3f3 22px, #f3f3f3 24px, transparent 24px, transparent 67px, #f3f3f3 67px, #f3f3f3 69px, transparent 69px)0 64px;
+  linear-gradient(135deg, #fff 22pt, #f3f3f3 22pt, #f3f3f3 24pt, transparent 24pt, transparent 67pt, #f3f3f3 67pt, #f3f3f3 69pt, transparent 69pt),
+  linear-gradient(225deg, #fff 22pt, #f3f3f3 22pt, #f3f3f3 24pt, transparent 24pt, transparent 67pt, #f3f3f3 67pt, #f3f3f3 69pt, transparent 69pt)0 64pt;
   background-color:#fff;
-  background-size: 64px 128px;
+  background-size: 64pt 128pt;
 }
 
 #about-me-page p {
@@ -74,20 +74,20 @@ h1.header.dark {
 }
 
 .skills-container {
-  margin-top: 40px;
+  margin-top: 40pt;
   text-align: center;
 }
 
 .skill + .skill {
-  margin-left: 50px;
+  margin-left: 50pt;
 }
 
 .skill {
   fill: transparent;
   stroke: rgba(77, 106, 121, .8);
   /*stroke: rgba(224, 50, 1, .8);*/
-  stroke-width: 50px;
-  height: 200px;
+  stroke-width: 50pt;
+  height: 200pt;
   stroke-dasharray: 0 1005;
 
 
@@ -106,8 +106,8 @@ h1.header.dark {
 
 .skill text {
   text-anchor: middle;
-  font-size: 35px;
-  stroke-width: 2px;
+  font-size: 35pt;
+  stroke-width: 2pt;
   stroke: rgba(0, 0, 0, .5);
 }
 
@@ -117,23 +117,23 @@ h1.header.dark {
   r: 160;
 }
 
-.skills-row #skill-js {
+.skills-row #skill-90 {
   stroke-dasharray: 950 55;
 }
 
-.skills-row #skill-git {
+.skills-row #skill-80 {
   stroke-dasharray: 910 95;
 }
 
-.skills-row #skill-unix {
+.skills-row #skill-85 {
  stroke-dasharray: 930 75;
 }
 
-.skills-row #skill-python {
+.skills-row #skill-75 {
   stroke-dasharray: 870 135;
 }
 
-.skills-row #skill-node {
+.skills-row #skill-70 {
   stroke-dasharray: 800 205;
 }
 
@@ -144,30 +144,30 @@ h1.header.dark {
   background-size: cover;
 
   position: absolute;
-  left: -20px;
-  right: -20px;
-  top: -20px;
-  bottom: -20px;
+  left: -20pt;
+  right: -20pt;
+  top: -20pt;
+  bottom: -20pt;
 
-  filter: brightness(0.4) blur(5px);
-  -webkit-filter: brightness(0.4) blur(5px);
-  -moz-filter: brightness(0.4) blur(5px);
-  -o-filter: brightness(0.4) blur(5px);
-  -ms-filter: brightness(0.4) blur(5px);
+  filter: brightness(0.4) blur(5pt);
+  -webkit-filter: brightness(0.4) blur(5pt);
+  -moz-filter: brightness(0.4) blur(5pt);
+  -o-filter: brightness(0.4) blur(5pt);
+  -ms-filter: brightness(0.4) blur(5pt);
 }
 
 .project-container {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 70pt;
+  padding-bottom: 70pt;
   position: relative;
   z-index: 100;
 }
 
 .project {
-  padding: 20px 15vw;
+  padding: 20pt 15vw;
 }
 .project p {
-  font-size: 18px;
+  font-size: 18pt;
   text-align: justify;
 }
 

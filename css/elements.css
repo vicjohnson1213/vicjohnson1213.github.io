@@ -12,12 +12,12 @@ body {
 }
 
 hr {
-  border: 1px solid rgba(255, 255, 255, .2);
+  border: 1pt solid rgba(255, 255, 255, .2);
   width: 80%
 }
 
 p + p {
-  margin-top: 50px;
+  margin-top: 50pt;
 }
 
 
@@ -90,7 +90,7 @@ a.dark svg:hover {
 p.lead {
     font-family: 'Open Sans', sans-serif;
     color: rgba(255, 255, 255, .7);
-    font-size: 22px;
+    font-size: 22pt;
 }
 
 p.bold {
@@ -105,10 +105,10 @@ p.dark {
 
 .bg-img {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  right: 0pt;
   z-index: -100;
 }
 
@@ -136,14 +136,14 @@ p.dark {
 }
 
 .nav-menu {
-  top: 25px;
-  left: 10px;
+  top: 25pt;
+  left: 10pt;
 }
 
 .nav-menu ul {
   display: inline;
   list-style: none;
-  padding: 15px;
+  padding: 15pt;
 }
 
 .nav-menu ul li {
@@ -154,9 +154,9 @@ p.dark {
 .nav-menu ul li a {
   text-decoration: none;
   font-family: 'Montserrat', helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   text-transform: uppercase;
-  padding: 10px 15px;
+  padding: 10pt 15pt;
 
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
@@ -165,13 +165,14 @@ p.dark {
   transition: all .25s;
 }
 
+/*
 .nav-menu ul li a:before {
   content: "";
   display: block;
   position: absolute;
   left: 50%;
-  bottom: -12px;
-  height: 2px;
+  bottom: -12pt;
+  height: 2pt;
   width: 0;
   background-color: rgba(255, 255, 255, .7);
 
@@ -181,26 +182,34 @@ p.dark {
   -o-transition: all .25s;
   transition: all .25s;
 }
+*/
 
-.nav-menu.dark ul li a:before,
-.dark .nav-menu ul li a:before {
-  background-color: rgba(0, 0, 0, .5);
+/*.nav-menu.dark ul li a,
+.dark .nav-menu ul li a {
+  color: rgba(0, 0, 0, .5);
 }
 
-.nav-menu ul li a:hover:before,
+.nav-menu ul li a:hover,
 .nav-menu ul li a.active:before {
   width: 100%;
   left: 0;
 }
+*/
+.nav-menu ul li a.active {
+  color: rgba(255, 255, 255, 1);
+}
 
+.nav-menu.dark ul li a.active {
+  color: rgba(0, 0, 0, 1);
+}
 
 .media-icons {
-  top: 21px;
-  right: 35px;
+  top: 21pt;
+  right: 35pt;
 }
 
 .media-icons a + a {
-  margin-left: 15px;
+  margin-left: 15pt;
 }
 
 .center-container {
@@ -217,22 +226,22 @@ p.dark {
 }
 
 .footer {
-  height: 150px;
+  height: 150pt;
   background-color:#f9f9f9;
 
-  background-size: 58px 58px;
-  background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
-  0px 36px, 4px 2px, 29px 6px, 33px 30px;
+  background-size: 58pt 58pt;
+  background-position: 0pt 2pt, 4pt 35pt, 29pt 31pt, 33pt 6pt,
+  0pt 36pt, 4pt 2pt, 29pt 6pt, 33pt 30pt;
   background-image: 
-  linear-gradient(335deg, #fff 23px, transparent 23px),
-  linear-gradient(155deg, #fff 23px, transparent 23px),
-  linear-gradient(335deg, #fff 23px, transparent 23px),
-  linear-gradient(155deg, #fff 23px, transparent 23px),
+  linear-gradient(335deg, #fff 23pt, transparent 23pt),
+  linear-gradient(155deg, #fff 23pt, transparent 23pt),
+  linear-gradient(335deg, #fff 23pt, transparent 23pt),
+  linear-gradient(155deg, #fff 23pt, transparent 23pt),
 
-  linear-gradient(335deg, #fff 10px, transparent 10px),
-  linear-gradient(155deg, #fff 10px, transparent 10px),
-  linear-gradient(335deg, #fff 10px, transparent 10px),
-  linear-gradient(155deg, #fff 10px, transparent 10px);
+  linear-gradient(335deg, #fff 10pt, transparent 10pt),
+  linear-gradient(155deg, #fff 10pt, transparent 10pt),
+  linear-gradient(335deg, #fff 10pt, transparent 10pt),
+  linear-gradient(155deg, #fff 10pt, transparent 10pt);
 
   display: flex;
   align-items: center;

@@ -1,3 +1,1 @@
-# Victor Johnson
-
-Welcome to my website! It's currently under construction. Check back soon!
+Unfortunately, this project is under construction. But soon, it'll be back and better than ever!

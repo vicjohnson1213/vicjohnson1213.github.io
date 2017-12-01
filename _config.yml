@@ -1,3 +1,9 @@
 theme: jekyll-theme-cayman
 title: Victor Johnson
 description: Just a software engineer living in Austin, TX
+buttons:
+  - title: 'Github'
+    url: 'https://github.com/vicjohnson1213'
+  - title: 'LinkedIn'
+    url: 'www.linkedin.com/in/vicjohnson1213'
+    

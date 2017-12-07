@@ -1,9 +1,20 @@
-theme: jekyll-theme-cayman
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
+
+# Setup
 title: Victor Johnson
-description: Just a software engineer living in Austin, TX
-buttons:
-  - title: 'Github'
-    url: 'https://github.com/vicjohnson1213'
-  - title: 'LinkedIn'
-    url: 'https://www.linkedin.com/in/vicjohnson1213'
-    
+tagline: ''
+description: 'Just a sfotware engineer living in Austin, Texas.'
+url: https://vicjohnson1213.github.io
+baseurl: ''
+
+# About/contact
+author:
+  name: Victor Johnson
+  url: vicjohnson1213.github.io
+  email: vicjohnson1213@gmail.com
+
+# Custom vars
+version: 1.0.0

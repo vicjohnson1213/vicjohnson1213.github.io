@@ -22,6 +22,8 @@ The resulting prompt will always be the same though, which isn't very exciting:
 Lame Prompt:
 ```
 
+---
+
 ## Adding Some Useful Information
 
 There are a number of variables you have access that allow you to add some useful information to your prompt. You can see a list of these variables at the [bottom of this post](#available-variables)

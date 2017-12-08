@@ -6,11 +6,8 @@ h5 a {
   color: #313131;
 }
 
-.highlight {
-  overflow-x: scroll;
-}
-
 .highlight > pre {
     white-space: pre;
     word-wrap: normal;
+  overflow-x: scroll;
 }

@@ -105,7 +105,6 @@ function makePS1 {
   local last_exit_status=$?
 
   # If you are in a git repo, then add the current branch to the prompt
-  # Note: This requires you to have the __git_ps1 command installed on your machine
   local branch=$(__git_ps1 "%s")
 
   if [[ ${branch} != "" ]]; then
@@ -126,6 +125,14 @@ function makePS1 {
 
 export PROMPT_COMMAND=makePS1
 ```
+
+*Note:* The git branch addition requires you to have the git-prompt utility installed on your machine. If you're interested, it can be found on [GitHub](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+
+---
+
+## Conclusion
+
+Although the examples shown in this post may be small and perhaps not *extremely* useful, hopefully it gave you the knowledge and inspiration to create your own awesome prompt. If you have any questions or suggestions feel free to create an issue in this [GitHub repository](https://github.com/vicjohnson1213/vicjohnson1213.github.io/issues)
 
 ---
 

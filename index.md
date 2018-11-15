@@ -1,6 +1,8 @@
 ---
 layout: page
 navTitle: Projects
+exclude: true
+displayTitle: Personal Projects
 ---
 
 ## [SFMF](https://vicjohnson1213.github.io/SFMF/)

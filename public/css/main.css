@@ -9,5 +9,9 @@ h5 a {
 .highlight > pre {
     white-space: pre;
     word-wrap: normal;
-  overflow-x: scroll;
+    overflow-x: scroll;
+}
+
+.page-title {
+    margin-bottom: 40px;
 }

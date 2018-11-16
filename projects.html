@@ -1,0 +1,19 @@
+---
+layout: page
+navTitle: Projects
+displayTitle: Personal Projects
+---
+
+<div class="preview">
+    {% assign projects_list = site.projects | sort:"order" %}
+    {% for project in projects_list %}
+    <div class="preview">
+        <h2 class="preview-title">
+            <a href="{{ project.link }}">
+                {{ project.title }}
+            </a>
+        </h2>
+        <div class="preview-body">{{ project.content }}</div>
+    </div>
+    {% endfor %}
+</div>

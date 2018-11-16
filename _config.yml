@@ -1,7 +1,7 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink: pretty
+permalink: /:collection/:title
 
 # Setup
 title: Victor Johnson
@@ -9,6 +9,9 @@ tagline: ''
 description: 'Just a software engineer living in Austin, Texas.'
 url: https://vicjohnson1213.github.io
 baseurl: ''
+collections:
+    projects:
+        output: true
 
 # About/contact
 author:

@@ -4,18 +4,18 @@ navTitle: Posts
 displayTitle: Tutorials and Posts
 ---
 
-<div class="posts">
-  {% for post in site.categories.posts %}
-  <div class="post">
-    <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
+<div class="previews">
+    {% for post in site.posts %}
+    <div class="preview">
+        <h2 class="preview-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h2>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+        <div class="preview-date">{{ post.date | date_to_string }}</div>
+        <div class="preview-body">{{ post.description }}</div>
 
-    {{ post.description }}
-  </div>
-  {% endfor %}
+    </div>
+    {% endfor %}
 </div>

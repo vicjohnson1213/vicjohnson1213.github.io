@@ -4,8 +4,10 @@ layout: default
 
 <div class="page">
     {% if page.displayTitle %}
-        <h1 class="page-title">{{ page.displayTitle }}</h1>
+        <h1 class="page-title container">{{ page.displayTitle }}</h1>
     {% endif %}
-    
-    {{ content }}
+
+    <div class="page-body container">
+        {{ content }}
+    </div>
 </div>

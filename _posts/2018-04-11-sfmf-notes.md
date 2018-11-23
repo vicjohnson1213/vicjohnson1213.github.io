@@ -1,6 +1,6 @@
 ---
-layout: post
-title: SFMF Development Notes
+layout: page
+displayTitle: SFMF Development Notes
 description: SFMF is a modding framework for a game called <a href="https://superflightgame.com/">Superflight</a>.
 ---
 

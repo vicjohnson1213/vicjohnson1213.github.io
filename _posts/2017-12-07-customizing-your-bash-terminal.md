@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Customizing Your Bash Prompt
+layout: page
+displayTitle: Customizing Your Bash Prompt
 description: A quick explanation of how you can customize the prompt that's shown in your bash terminal.
 ---
 

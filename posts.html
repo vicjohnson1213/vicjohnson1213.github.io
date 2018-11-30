@@ -13,9 +13,8 @@ displayTitle: Tutorials and Posts
             </a>
         </h2>
 
-        <div class="preview-date">{{ post.date | date_to_string }}</div>
-        <div class="preview-body">{{ post.description }}</div>
-
+        <div class="preview-date detail">{{ post.date | date_to_string }}</div>
+        <div class="preview-body"><p>{{ post.description }}</p></div>
     </div>
     {% endfor %}
 </div>

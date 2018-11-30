@@ -4,19 +4,16 @@
 {% include head.html %}
 
 <body>
-    <div class="masthead">
-        <div class="container">
-            <h3 class="masthead-title">
-                <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-                <small>{{ site.tagline }}</small>
-            </h3>
-            <div class="masthead-body">
-                <i id="menu-toggle" class="material-icons">menu</i>
-            </div>
+    <div class="masthead container">
+        <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+        </h3>
+        <div class="masthead-body">
+            <i id="menu-toggle" class="material-icons">menu</i>
         </div>
     </div>
     <div id="menu" class="menu hidden">
-        <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+        <!-- <a class="nav-link" href="{{ site.baseurl }}/">Home</a> -->
         {% assign pages_list = site.pages | sort:"url" %}
         {% for node in pages_list %}
             {% if node.exclude != true %}
@@ -26,9 +23,12 @@
             {% endif %}
         {% endfor %}
     </div>
+
     <div class="content">
         {{ content }}
     </div>
+
+    {% include footer.html %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <script>

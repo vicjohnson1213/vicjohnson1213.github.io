@@ -6,7 +6,7 @@ description: A quick explanation of how you can customize the prompt that's show
 
 Customizing your command line prompt is pretty simple and can be quite powerful. You're given many different variables to use inside of your prompt, and if that isn't enough, then you can write your own function that will dynamically create the prompt after each command.
 
----
+<div class="divider"></div>
 
 ## A Static Prompt
 
@@ -22,7 +22,7 @@ The resulting prompt will always be the same though, which isn't very exciting:
 Lame Prompt:
 ```
 
----
+<div class="divider"></div>
 
 ## Adding Some Useful Information
 
@@ -40,7 +40,7 @@ Now your prompt should look similar to the following:
 [05:41 PM][~/Documents/projects]:
 ```
 
----
+<div class="divider"></div>
 
 ## Making a Dynamic Prompt
 
@@ -74,7 +74,7 @@ good command
 
 Now the data that can be displayed in your prompt is nearly unlimited. You can display the output of any commands or anything else you'd like!
 
----
+<div class="divider"></div>
 
 ## My Prompt
 
@@ -128,13 +128,13 @@ export PROMPT_COMMAND=makePS1
 
 *Note:* The git branch addition requires you to have the git-prompt utility installed on your machine. If you're interested, it can be found on [GitHub](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
 
----
+<div class="divider"></div>
 
 ## Conclusion
 
 Although the examples shown in this post may be small and perhaps not *extremely* useful, hopefully it gave you the knowledge and inspiration to create your own awesome prompt. If you have any questions or suggestions feel free to create an issue in this [GitHub repository](https://github.com/vicjohnson1213/vicjohnson1213.github.io/issues)
 
----
+<div class="divider"></div>
 
 ## Available Variables
 

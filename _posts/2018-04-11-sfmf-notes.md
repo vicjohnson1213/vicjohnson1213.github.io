@@ -6,26 +6,32 @@ description: SFMF is a modding framework for a game called <a href="https://supe
 
 ## Table of Contents
 
-- Design Decisions
-  - [Data Source](#data-source)
-  - [Separating All Mods vs. Installed Mods](#separating-all-mods-vs-installed-mods)
-  - [Reinstalling SFMF on Installed Mod Changes](#reinstalling-sfmf-on-installed-mod-changes)
-  - [Mod Settings as a CSV](#mod-settings-as-a-csv)
-- Unity References
-  - [Unity Controller Key Codes](#unity-controller-key-codes)
+<div class="list-header">Design Decisions:</div>
+<ul>
+    <li><a href="#data-source">Data Source</a></li>
+    <li><a href="#separating-all-mods-vs-installed-mods">Separating All Mods vs. Installed Mods</a></li>
+    <li><a href="#reinstalling-sfmf-on-installed-mod-changes">Reinstalling SFMF on Installed Mod Changes</a></li>
+    <li><a href="#mod-settings-as-a-csv">Mod Settings as a CSV</a></li>
+</ul>
 
----
+<div class="list-header">Unity References:</div>
+<ul>
+    <li><a href="#unity-controller-key-codes">Unity Controller Key Codes</a></li>
+</ul>
+
+<div class="divider"></div>
 
 ## Data Source
 
 Although I would love to have the mods and their data stored in a database, I decided to keep it simple with a JSON file in the SFMF repository describing each mod and some other data about SFMF.
 
-Reasoning:
+<div class="list-header">Reasoning:</div>
+<ul>
+    <li>It's free to store files in GitHub if they're open source.</li>
+    <li>C# has a really solid utility for JSON serialization/deserialization.</li>
+</ul>
 
-1. It's free to store files in GitHub if they're open source.
-2. C# has a really solid utility for JSON serialization/deserialization.
-
----
+<div class="divider"></div>
 
 ## Separating All Mods vs. Installed Mods
 
@@ -43,7 +49,7 @@ The Caveat:
 
 Now there are two files that are used to keep track of mods: `manifest.json` keeps track of all mods and their data, `installedMods.txt` keeps the path of installed mods. So there's a small amount of duplicated data and a little bit of extra work that has to happen to keep both files in sync, but it works quite well.
 
----
+<div class="divider"></div>
 
 ## Reinstalling SFMF on Installed Mod Changes
 
@@ -51,7 +57,7 @@ To prevent potential exploits, SFMF will reinstall itself any time the status of
 
 Although this approach may slow down installing some mods, it keeps things fair no matter which mods are installed.
 
----
+<div class="divider"></div>
 
 ## Mod Settings as a CSV
 
@@ -66,7 +72,7 @@ Setting,Name,Value
 Control,Name,Keyboard Key,Controller Button
 ```
 
----
+<div class="divider"></div>
 
 ## Unity Controller Key Codes
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 displayTitle: Customizing Your Bash Prompt
-description: A quick explanation of how you can customize the prompt that's shown in your bash terminal.
+description: A short tutorial on customizing your bash prompt and different approaches that can be taken to do so.
 ---
 
 Customizing your command line prompt is pretty simple and can be quite powerful. You're given many different variables to use inside of your prompt, and if that isn't enough, then you can write your own function that will dynamically create the prompt after each command.

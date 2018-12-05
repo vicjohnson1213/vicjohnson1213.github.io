@@ -5,4 +5,4 @@ order: 3
 tech: JavaScript, Node.js
 ---
 
-Whiff Bot is a discord bot that I created to introduce some useful utilities to Discord. These utilities include die rolling, straw drawing, and random team assignment.
+Whiff Bot is a discord bot intended to introduce some useful utilities to Discord. These utilities include die rolling, straw drawing, and random team assignment.

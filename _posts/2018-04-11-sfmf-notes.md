@@ -1,7 +1,7 @@
 ---
 layout: page
 displayTitle: SFMF Development Notes
-description: SFMF is a modding framework for a game called <a href="https://superflightgame.com/">Superflight</a>.
+description: Explanations for some of the design decisions made during the development of SFMF as well as some useful information about Unity that I couldn't find online.
 ---
 
 ## Table of Contents

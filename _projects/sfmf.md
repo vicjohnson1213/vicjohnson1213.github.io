@@ -1,8 +1,8 @@
 ---
-title: SFMF
+title: SFMF (Superflight Modding Framework)
 link: https://vicjohnson1213.github.io/SFMF/
 order: 1
 tech: C#, WPF, Unity
 ---
 
-SFMF (Superflight Modding Framework) is a desktop application for installing and managing mods for the game Superflight.
+Inspired by [@Plarfl's](https://github.com/Phlarfl) implementation, SFMF is a desktop application for installing and managing mods for the game [Superflight](https://superflightgame.com/).

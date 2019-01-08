@@ -33,6 +33,9 @@ $footer-bg: $light-green;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1200px;
 
+$blockquote-border: $light-gray;
+$blockquote-text: $medium-gray;
+
 /* Page setup */
 
 * {
@@ -128,6 +131,23 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: $table-odd;
+}
+
+/* Blockquotes */
+
+blockquote {
+    margin: 0;
+    padding: 8px 0 8px 24px;
+    border-left: 4px solid $blockquote-border;
+    color: $blockquote-text;
+
+    & :first-child {
+        margin-top: 0;
+    }
+
+    & :last-child {
+        margin-bottom: 0;
+    }
 }
 
 /* Lists */

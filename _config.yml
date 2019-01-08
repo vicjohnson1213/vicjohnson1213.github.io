@@ -15,9 +15,9 @@ collections:
 
 # About/contact
 author:
-  name: Victor Johnson
-  url: vicjohnson1213.github.io
-  email: vicjohnson1213@gmail.com
+    name: Victor Johnson
+    url: vicjohnson1213.github.io
+    email: vicjohnson1213@gmail.com
 
 # Custom vars
 version: 1.0.0

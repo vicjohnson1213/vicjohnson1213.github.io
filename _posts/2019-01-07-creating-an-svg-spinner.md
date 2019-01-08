@@ -100,7 +100,7 @@ From [the SVG docs](https://www.w3.org/TR/SVG11/coords.html#Units):
 >
 > - For any x-coordinate value or width value expressed as a percentage of the viewport, the value to use is the specified percentage of the actual-width in user units for the nearest containing viewport, where actual-width is the width dimension of the viewport element within the user coordinate system for the viewport element.
 > - For any y-coordinate value or height value expressed as a percentage of the viewport, the value to use is the specified percentage of the actual-height in user units for the nearest containing viewport, where actual-height is the height dimension of the viewport element within the user coordinate system for the viewport element.
-> - For any other length value expressed as a percentage of the viewport, the percentage is calculated as the specified percentage of `sqrt((actual-width)\*\*2 + (actual-height)\*\*2))/sqrt(2)`.
+> - For any other length value expressed as a percentage of the viewport, the percentage is calculated as the specified percentage of `sqrt((actual-width)^2 + (actual-height)^2))/sqrt(2)`.
 
 So the circumference of the circle will have `width: 314%` (`π * viewport-width`). With this knowledge, we can update our example to use the correct percentages.
 

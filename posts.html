@@ -5,16 +5,19 @@ displayTitle: Tutorials and Posts
 ---
 
 <div class="previews">
+    <!-- {% assign filtered_posts = site.posts | where: 'hidden', empty %} -->
     {% for post in site.posts %}
-    <div class="preview">
-        <h2 class="preview-title">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                {{ post.displayTitle }}
-            </a>
-        </h2>
+        {% if post.hidden == nil %}
+            <div class="preview">
+                <h2 class="preview-title">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {{ post.displayTitle }} 
+                    </a>
+                </h2>
 
-        <div class="preview-date detail">{{ post.date | date_to_string }}</div>
-        <div class="preview-body"><p>{{ post.description }}</p></div>
-    </div>
+                <div class="preview-date detail">{{ post.date | date_to_string }}</div>
+                <div class="preview-body"><p>{{ post.description }}</p></div>
+            </div>
+        {% endif %}
     {% endfor %}
 </div>

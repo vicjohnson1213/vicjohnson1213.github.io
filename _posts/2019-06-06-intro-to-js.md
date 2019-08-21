@@ -113,6 +113,7 @@ let num = 1;
 while (num <= 10) {
     let product = multiply(num, num);
     console.log(product);
+    num += 1;
 }
 
 function multiply(a, b) {

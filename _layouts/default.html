@@ -14,7 +14,7 @@
     </div>
     <div id="menu" class="menu hidden">
         <!-- <a class="nav-link" href="{{ site.baseurl }}/">Home</a> -->
-        {% assign pages_list = site.pages | sort:"url" %}
+        {% assign pages_list = site.pages | sort:"order" %}
         {% for node in pages_list %}
             {% if node.exclude != true %}
                 {% if node.layout == "page" %}

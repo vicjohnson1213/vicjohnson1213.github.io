@@ -6,7 +6,7 @@ exclude: true
 
 ## Hi there, I'm Vic
 
-I'm a software engineer based out of Austin, TX. My primary focus has been in the web world working on Angular applications and the backend APIs to support them. I've also dabbled a little bit in the development of iOS apps, desktop apps, video games, and embedded systems. In general though, I just enjoy writing software. I'm eager to shift disciplines and expand my knowledge where I can. Feel free to browse [some of my favorite projects](/projects) for more specific details.
+I'm a software engineer based out of Louisville, KY. My primary focus has been in the web world working on Angular applications and the backend APIs to support them. I've also dabbled a little bit in the development of iOS apps, desktop apps, video games, and embedded systems. In general though, I just enjoy writing software. I'm eager to shift disciplines and expand my knowledge where I can. Feel free to browse [some of my favorite projects](/projects) for more specific details.
 
 ## Beyond software
 
@@ -24,4 +24,4 @@ Golf has been a lifelong passion of mine. I've been through the somewhat competi
 
 #### Playing video games
 
-If I'm not out and about, I'm usually relaxing with friends playing some games. My most played games are Rocket League and CS:GO, but I also thoroughly enjoy playing through puzzle games and other single player games.
+If I'm not out and about, I'm usually relaxing with friends playing some games. My most played games are Rocket League and Valorant, but I also thoroughly enjoy playing through puzzle games and other single player games.

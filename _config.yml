@@ -6,8 +6,8 @@ permalink: pretty
 # Setup
 title: Victor Johnson
 tagline: ''
-description: 'Just a software engineer living in Austin, TX.'
-url: https://vicjohnson1213.github.io
+description: 'Just a software engineer living in Louisville, KY.'
+url: https://vicjohnson.dev
 baseurl: ''
 collections:
     projects:
@@ -16,7 +16,7 @@ collections:
 # About/contact
 author:
     name: Victor Johnson
-    url: vicjohnson1213.github.io
+    url: vicjohnson.dev
     email: vicjohnson1213@gmail.com
 
 # Custom vars

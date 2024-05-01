@@ -153,7 +153,7 @@ blockquote {
 
 /* Lists */
 
-.detail + .list-header {
+.job + .list-header {
     margin-top: 16px;
 }
 
@@ -179,14 +179,20 @@ blockquote {
     color: $medium-gray;
 }
 
-/* Info Group */
+/* Job */
 
-.info-group-title {
-    display: flex;
-    flex-direction: column;
-
+.job {
     h3 {
         margin: 0;
+    }
+
+    .role {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      font-family: 'Lato', sans-serif;
+      color: $medium-gray;
     }
 }
 

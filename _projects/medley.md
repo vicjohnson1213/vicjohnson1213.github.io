@@ -1,7 +1,7 @@
 ---
 title: Medley
 link: https://github.com/vicjohnson1213/Medley
-order: 1
+order: 10
 tech: Angular, Electron
 ---
 

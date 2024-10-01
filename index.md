@@ -1,12 +1,13 @@
 ---
 layout: page
-displayTitle: Hello World :)
+displayTitle: Hello World, I'm Vic!
 exclude: true
 ---
 
-## Hi there, I'm Vic!
 
-I'm a software engineer based out of Louisville, KY. Professionally, my primary focus has been on full stack web development working on Angular applications and .NET APIs to support them. Outside the workplace, I like to explore other disciplines and programming langauages. I maintain a couple iOS apps on Apple's App Store, an open source modding platform for a video game, and some other miscellaneous projects. At the end of the day, I just enjoy solving problems and writing software. I'm eager to shift disciplines and expand my knowledge where I can. Feel free to browse [some of my favorite projects](/projects) for more specific details.
+I'm a software engineer based out of Louisville, KY. Professionally, my primary focus has been on building web applications, mobile applications, and their APIs. Personally, I enjoy exploring other disciplines and programming langauages such as video game modding, desktop applications, and Discord/Twitter bots.
+
+At the end of the day, I just enjoy solving problems and writing software. I'm eager to shift disciplines and expand my knowledge where I can. Feel free to browse [some of my favorite projects](/projects) for more specific details.
 
 ## Beyond software
 

@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Variables */
 
 $darkest-green: #17252A;
@@ -46,15 +48,14 @@ $blockquote-text: $medium-gray;
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: "Public Sans", sans-serif;
     background-color: $white;
     color: $dark-gray;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+h4 + p {
+  margin-top: -1em;
 }
 
 a {
@@ -69,12 +70,6 @@ a {
     &:hover,
     &:visited:hover {
         color: $link-hover;
-    }
-}
-
-@media only screen and (min-width: $breakpoint-md) {
-    body {
-        font-size: 16px;
     }
 }
 
@@ -208,19 +203,13 @@ blockquote {
 .container {
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 800px;
 }
 
 @media only screen and (min-width: $breakpoint-md) {
     .container {
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-}
-
-@media only screen and (min-width: $breakpoint-lg) {
-    .container {
-        padding-left: 30%;
-        padding-right: 30%;
+        width: 60%;
+        margin: auto;
     }
 }
 
@@ -346,6 +335,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between
+
+    .container {
+        display: flex;
+        justify-content: space-between
+    }
 }

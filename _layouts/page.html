@@ -3,11 +3,13 @@ layout: default
 ---
 
 <div class="page">
-    <div class="page-title container">
+    <div class="page-title">
+      <div class="container">
         <h1>{{ page.displayTitle }}</h1>
         {% if page.date %}
             <div class="post-date">{{ page.date | date_to_string }}</div>
         {% endif %}
+      </div>
     </div>
 
     <div class="page-body container">

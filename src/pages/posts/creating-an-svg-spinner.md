@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: ../../layouts/PostLayout.astro
+pubDate: 2019-01-07
 displayTitle: Percentage Based SVG Stroke-DashArray
 description: An explanation for some of the unexpected behaviors around using percentages for the <code class="highlighter-rouge">stroke-dasharray</code> in SVGs.
 ---
@@ -29,7 +30,6 @@ For this little tutorial, let's try to use a single `stroke-dasharray` property 
     <svg class="svg" width="50" height="50">
       <circle cx="50%" cy="50%" r="25" fill="none" stroke="black" stroke-width="4" stroke-dasharray="78.5, 235.5" />
     </svg>
-
     <svg class="svg" width="100" height="100">
       <circle cx="50%" cy="50%" r="50" fill="none" stroke="black" stroke-width="4" stroke-dasharray="157%, 157%" />
     </svg>
@@ -55,7 +55,6 @@ Here's a little example (I'm going to omit some of the styling attributes like f
     <svg class="svg" width="50" height="50">
       <circle cx="50%" cy="50%" r="25" fill="none" stroke="black" stroke-width="4" stroke-dasharray="78.5, 78.5" />
     </svg>
-
     <svg class="svg" width="100" height="100">
       <circle cx="50%" cy="50%" r="50" fill="none" stroke="black" stroke-width="4" stroke-dasharray="78.5, 78.5" />
     </svg>
@@ -82,7 +81,6 @@ So if I always want the bottom half of the circle to have a stroke, let's just u
     <svg class="svg" width="50" height="50">
       <circle cx="50%" cy="50%" r="25" fill="none" stroke="black" stroke-width="4" stroke-dasharray="50%, 50%" />
     </svg>
-
     <svg class="svg" width="100" height="100">
       <circle cx="50%" cy="50%" r="50" fill="none" stroke="black" stroke-width="4" stroke-dasharray="50%, 50%" />
     </svg>
@@ -118,7 +116,6 @@ So the circumference of the circle will have `width: 314%` (`π * viewport-width
     <svg class="svg" width="50" height="50">
       <circle cx="50%" cy="50%" r="25" fill="none" stroke="black" stroke-width="4" stroke-dasharray="78.5, 235.5" />
     </svg>
-
     <svg class="svg" width="100" height="100">
       <circle cx="50%" cy="50%" r="50" fill="none" stroke="black" stroke-width="4" stroke-dasharray="157%, 157%" />
     </svg>

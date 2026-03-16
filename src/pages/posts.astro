@@ -1,0 +1,10 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+import PostPreview from "../components/PostPreview.astro"
+
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }))
+---
+
+<PageLayout title="Tutorials and Posts">
+    {allPosts.map((p: any) => <PostPreview url={p.url} title={p.frontmatter.displayTitle} date={p.frontmatter.pubDate} description={p.frontmatter.description} />)}
+</PageLayout>

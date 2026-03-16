@@ -1,0 +1,24 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import ProjectPreview from "../components/ProjectPreview.astro";
+
+const allPosts = Object.values(
+    import.meta.glob("./projects/*.md", { eager: true }),
+);
+---
+
+<PageLayout title="Tutorials and Posts">
+    {
+        allPosts
+            .sort((l:any, r: any) => l.frontmatter.order - r.frontmatter.order)
+            .map((p: any) => (
+            <ProjectPreview
+                title={p.frontmatter.title}
+                link={p.frontmatter.link}
+                tech={p.frontmatter.tech}
+            >
+                <p.Content />
+            </ProjectPreview>
+        ))
+    }
+</PageLayout>

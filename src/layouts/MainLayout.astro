@@ -1,0 +1,28 @@
+---
+import '../styles/theme.scss'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+        <div class="masthead container">
+        <h3 class="masthead-title">
+            <a href="/" title="Home">Vic Johnson</a>
+        </h3>
+        <div class="masthead-body">
+            <i id="menu-toggle" class="material-icons">menu</i>
+        </div>
+    </div>
+
+    <div class="content">
+		<slot />
+    </div>
+	</body>
+</html>

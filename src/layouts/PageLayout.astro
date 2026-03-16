@@ -1,0 +1,25 @@
+---
+import MainLayout from "./MainLayout.astro";
+const { title, date } = Astro.props;
+---
+
+<MainLayout>
+    <div class="page">
+        <div class="page-title">
+            <div class="container">
+                <h1>{title}</h1>
+                {
+                    date && (
+                        <div class="post-date">
+                            {date.toString().slice(0, 10)}
+                        </div>
+                    )
+                }
+            </div>
+        </div>
+
+        <div class="page-body container">
+            <slot />
+        </div>
+    </div>
+</MainLayout>

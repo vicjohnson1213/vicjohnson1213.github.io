@@ -1,0 +1,13 @@
+---
+const { url, title, date, description } = Astro.props
+---
+<div class="preview">
+    <h2 class="preview-title">
+        <a href={url}>
+            {title}
+        </a>
+    </h2>
+
+    <div class="preview-date detail">{date.toString().slice(0,10)}</div>
+    <div class="preview-body"><p>{description}</p></div>
+</div>

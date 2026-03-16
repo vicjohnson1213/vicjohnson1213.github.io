@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/MdLayout.astro
 pubDate: 2017-12-07
 displayTitle: Customizing Your Bash Prompt
 description: A short tutorial on customizing your bash prompt and different approaches that can be taken to do so.

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/MdLayout.astro
 pubDate: 2018-04-11
 displayTitle: SFMF Development Notes
 description: Explanations for some of the design decisions made during the development of SFMF as well as some useful information about Unity that I couldn't find online.

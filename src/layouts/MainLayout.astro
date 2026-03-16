@@ -1,5 +1,6 @@
 ---
-import '../styles/theme.scss'
+import "../styles/theme.scss";
+import Navigation from "../components/Navigation.astro"
 ---
 
 <html lang="en">
@@ -12,17 +13,42 @@ import '../styles/theme.scss'
 		<title>Astro</title>
 	</head>
 	<body>
-        <div class="masthead container">
-        <h3 class="masthead-title">
-            <a href="/" title="Home">Vic Johnson</a>
-        </h3>
-        <div class="masthead-body">
-            <i id="menu-toggle" class="material-icons">menu</i>
-        </div>
-    </div>
+		<div class="masthead container">
+			<h3 class="masthead-title">
+				<a href="/" title="Home">Vic Johnson</a>
+			</h3>
+			<div class="masthead-body">
+				<i id="menu-toggle" class="material-icons">menu</i>
+			</div>
+		</div>
+		<Navigation />
 
-    <div class="content">
-		<slot />
-    </div>
+		<div class="content">
+			<slot />
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+			crossorigin="anonymous"></script>
+		<script>
+			$(function () {
+				const links = $(".nav-link");
+				links.each(function () {
+					$(".masthead-body").append($(this).clone());
+				});
+
+				$("#menu-toggle").click(() => {
+					const menu = $(".menu");
+					if (menu.hasClass("hidden")) {
+						menu.height(menu[0].scrollHeight);
+						menu.removeClass("hidden");
+					} else {
+						menu.height(0);
+						menu.addClass("hidden");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

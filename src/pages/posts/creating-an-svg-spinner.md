@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../layouts/MdLayout.astro
 pubDate: 2019-01-07
 displayTitle: Percentage Based SVG Stroke-DashArray
 description: An explanation for some of the unexpected behaviors around using percentages for the <code class="highlighter-rouge">stroke-dasharray</code> in SVGs.

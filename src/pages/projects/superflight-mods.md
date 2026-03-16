@@ -1,6 +1,6 @@
 ---
 title: Superflight Mods
-link: https://github.com/vicjohnson1213/Superflight-Mods
+link: https://github.com/vicjohnson/Superflight-Mods
 order: 3
 tech: C#, Unity
 ---

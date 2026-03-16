@@ -1,6 +1,6 @@
 ---
 title: SFMF (Superflight Modding Framework)
-link: https://vicjohnson1213.github.io/SFMF/
+link: https://vicjohnson.dev/SFMF/
 order: 2
 tech: C#, WPF, Unity
 ---

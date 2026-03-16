@@ -1,6 +1,6 @@
 ---
 title: Whiff Bot Discord
-link: https://github.com/vicjohnson1213/Whiff-Bot-Discord
+link: https://github.com/vicjohnson/Whiff-Bot-Discord
 order: 4
 tech: JavaScript, Node.js
 ---

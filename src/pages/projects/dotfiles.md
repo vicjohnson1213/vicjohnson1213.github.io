@@ -1,6 +1,6 @@
 ---
 title: Dotfiles
-link: https://github.com/vicjohnson1213/dotfiles
+link: https://github.com/vicjohnson/dotfiles
 order: 6
 tech: Bash
 ---

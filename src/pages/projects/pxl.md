@@ -1,6 +1,6 @@
 ---
 title: Pxl
-link: https://github.com/vicjohnson1213/Pxl
+link: https://github.com/vicjohnson/Pxl
 order: 5
 tech: Python, Pillow
 ---

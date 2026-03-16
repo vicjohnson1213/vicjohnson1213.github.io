@@ -11,7 +11,7 @@ At the end of the day, I just enjoy solving problems and writing software. I'm e
 
 #### Woodworking
 
-As one of the most recent hobbies I've picked up, woodworking is also one that I'm least experienced in. Starting with youtube videos and a basic set of tools I started making cutting boards for myself, friends, and family. As I improved and built up my collection of tools I've started venturing into more significant projects. I'm always excited to show off the [entertainment stand and floor standing speakers](/public/EntertainmentStand.jpeg) I made.
+As one of the most recent hobbies I've picked up, woodworking is also one that I'm least experienced in. Starting with youtube videos and a basic set of tools I started making cutting boards for myself, friends, and family. As I improved and built up my collection of tools I've started venturing into more significant projects. I'm always excited to show off the [entertainment stand and floor standing speakers](/EntertainmentStand.jpeg) I made.
 
 #### Bookbinding
 

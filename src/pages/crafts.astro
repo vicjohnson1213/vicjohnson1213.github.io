@@ -1,0 +1,19 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import PostPreview from "../components/PostPreview.astro";
+
+const allCrafts = Object.values(
+    import.meta.glob("./crafts/*.md", { eager: true }),
+);
+---
+
+<PageLayout title="Crafts">
+    {
+        allCrafts
+            .filter((c: any) => !c.frontmatter.hide)
+            .sort((l:any, r: any) => l.frontmatter.order - r.frontmatter.order)
+            .map((c: any) => (
+                <PostPreview url={c.url} title={c.frontmatter.displayTitle} date={c.frontmatter.pubDate} description={c.frontmatter.description} />
+            ))
+    }
+</PageLayout>

@@ -331,19 +331,38 @@ blockquote {
 
 /* Preview */
 
+.page-body {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .preview {
-    padding: 24px 0;
+    border: $border;
+    box-shadow: $shadow;
+    background-color: $white;
 
     & + .preview {
-        border-top: $border;
+        margin-top: 24px;
     }
 
     .preview-title {
         margin: 0;
+        padding: 16px;
+        background-color: $mint;
+        border-bottom: $border;
     }
 
-    .preview-body p {
-        margin-bottom: 0;
+    .preview-date,
+    .detail {
+        padding: 8px 16px 0;
+    }
+
+    .preview-body {
+        padding: 8px 16px 16px;
+
+        p {
+            margin-bottom: 0;
+        }
     }
 }
 

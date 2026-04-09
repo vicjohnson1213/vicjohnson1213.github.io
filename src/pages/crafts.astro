@@ -10,7 +10,7 @@ const allCrafts = Object.values(
 <PageLayout title="Crafts">
     {
         allCrafts
-            .filter((c: any) => !c.frontmatter.hide)
+            .filter((c: any) => !c.frontmatter.hidden)
             .sort((l:any, r: any) => l.frontmatter.order - r.frontmatter.order)
             .map((c: any) => (
                 <PostPreview url={c.url} title={c.frontmatter.displayTitle} date={c.frontmatter.pubDate} description={c.frontmatter.description} />

@@ -6,5 +6,11 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 ---
 
 <PageLayout title="Tutorials and Posts">
-    {allPosts.map((p: any) => <PostPreview url={p.url} title={p.frontmatter.displayTitle} date={p.frontmatter.pubDate} description={p.frontmatter.description} />)}
+    {
+		allPosts
+			.filter((c: any) => !c.hidden)
+			.map((p: any) => (
+				<PostPreview url={p.url} title={p.frontmatter.displayTitle} date={p.frontmatter.pubDate} description={p.frontmatter.description} />
+			))
+	}
 </PageLayout>
